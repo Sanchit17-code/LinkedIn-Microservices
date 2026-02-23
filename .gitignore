@@ -1,0 +1,35 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Maven
+target/
+**/target/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.*
+
+# Build
+*.jar
+*.war
+
+# Mac
+__MACOSX/
+
+# VSCode
+.vscode/
+
+# Node (future frontend)
+node_modules/
+dist/
+
+# Java
+*.class
