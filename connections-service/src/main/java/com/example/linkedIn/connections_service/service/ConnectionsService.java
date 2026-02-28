@@ -1,7 +1,7 @@
-package com.codingshuttle.linkedin.connections_service.service;
+package com.example.linkedIn.connections_service.service;
 
-import com.codingshuttle.linkedin.connections_service.entity.Person;
-import com.codingshuttle.linkedin.connections_service.repository.PersonRepository;
+import com.example.linkedIn.connections_service.entity.Person;
+import com.example.linkedIn.connections_service.repository.PersonRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

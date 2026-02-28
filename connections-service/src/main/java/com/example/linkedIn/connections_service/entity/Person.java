@@ -1,4 +1,4 @@
-package com.codingshuttle.linkedin.connections_service.entity;
+package com.example.linkedIn.connections_service.entity;
 
 import lombok.Data;
 import org.springframework.data.neo4j.core.schema.GeneratedValue;

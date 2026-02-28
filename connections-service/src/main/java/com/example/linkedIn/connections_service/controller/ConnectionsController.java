@@ -1,7 +1,7 @@
-package com.codingshuttle.linkedin.connections_service.controller;
+package com.example.linkedIn.connections_service.controller;
 
-import com.codingshuttle.linkedin.connections_service.entity.Person;
-import com.codingshuttle.linkedin.connections_service.service.ConnectionsService;
+import com.example.linkedIn.connections_service.entity.Person;
+import com.example.linkedIn.connections_service.service.ConnectionsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

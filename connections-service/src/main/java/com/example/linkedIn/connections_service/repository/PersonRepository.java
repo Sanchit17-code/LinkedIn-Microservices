@@ -1,6 +1,6 @@
-package com.codingshuttle.linkedin.connections_service.repository;
+package com.example.linkedIn.connections_service.repository;
 
-import com.codingshuttle.linkedin.connections_service.entity.Person;
+import com.example.linkedIn.connections_service.entity.Person;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.data.neo4j.repository.query.Query;
 
