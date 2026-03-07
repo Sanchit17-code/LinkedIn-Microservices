@@ -1,5 +1,8 @@
 package com.example.linkedIn.posts_service.service;
 
+import com.example.linkedIn.posts_service.auth.UserContextHolder;
+import com.example.linkedIn.posts_service.clients.ConnectionClient;
+import com.example.linkedIn.posts_service.dto.PersonDto;
 import com.example.linkedIn.posts_service.dto.PostCreateRequestDto;
 import com.example.linkedIn.posts_service.dto.PostDto;
 import com.example.linkedIn.posts_service.entity.Post;
@@ -20,6 +23,7 @@ public class PostsService {
 
     private final PostsRepository postsRepository;
     private final ModelMapper modelMapper;
+    private final ConnectionClient connectionClient;
 
     public PostDto createPost(PostCreateRequestDto postDto, Long userId) {
         Post post = modelMapper.map(postDto, Post.class);
@@ -31,6 +35,10 @@ public class PostsService {
 
     public PostDto getPostById(Long postId) {
         log.debug("Retrieving post with ID: {}", postId);
+        Long userId = UserContextHolder.getCurrentUserId();
+        List<PersonDto> firstConnections = connectionClient.getFirstConnections();
+
+        // TODO: send notification to all connections later on
         Post post = postsRepository.findById(postId).orElseThrow(() ->
                 new ResourceNotFoundException("Post not found with id: "+postId));
         return modelMapper.map(post, PostDto.class);

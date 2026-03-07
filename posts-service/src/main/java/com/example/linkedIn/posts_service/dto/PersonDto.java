@@ -1,4 +1,4 @@
-package com.codingshuttle.linkedin.posts_service.dto;
+package com.example.linkedIn.posts_service.dto;
 
 import lombok.Data;
 
